@@ -8,6 +8,10 @@
             Console.WriteLine(etiqueta);
             string resumen = ProductHelper.CrearResumenVenta(97612, "pantalón", 3, 15000);
             Console.WriteLine(resumen);
+
+            Product p = new Product("Original");
+            string comparacion = ProductHelper.CompararCopias(12, p);
+            Console.WriteLine(comparacion);
         }
     }
 }

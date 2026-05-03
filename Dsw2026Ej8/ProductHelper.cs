@@ -20,5 +20,16 @@ namespace Dsw2026Ej8
             var prod = new { Code = productCode, Description = productDescription, Quantity = quantity, Total = total }; //clase anonima
             return $"{prod.Code} - {prod.Description} - {prod.Total:C2}";
         }
+
+        public static string CompararCopias(int originalValue, Product product)
+        {
+            int localValue = originalValue;
+            localValue++;
+
+            Product prod = product;
+            prod.CambiarDescripcion("descripción nueva");
+
+            return $"{originalValue}-{localValue}-{prod.Description}";
+        }
     }
 }
