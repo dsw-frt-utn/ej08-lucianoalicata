@@ -4,7 +4,8 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            string etiqueta = ProductHelper.ObtenerEtiquetaProducto(77881, "camisa", 10000);
+            Console.WriteLine(etiqueta);
         }
     }
 }
