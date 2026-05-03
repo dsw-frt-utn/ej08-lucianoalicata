@@ -4,14 +4,19 @@
     {
         static void Main(string[] args)
         {
+            //1
             string etiqueta = ProductHelper.ObtenerEtiquetaProducto(77881, "camisa", 10000);
             Console.WriteLine(etiqueta);
+            //2
             string resumen = ProductHelper.CrearResumenVenta(97612, "pantalón", 3, 15000);
             Console.WriteLine(resumen);
-
+            //3
             Product p = new Product("Original");
             string comparacion = ProductHelper.CompararCopias(12, p);
             Console.WriteLine(comparacion);
+            //4
+            double promedio = ProductHelper.CalcularPromedio(8, null, 7);
+            Console.WriteLine(promedio);
         }
     }
 }
