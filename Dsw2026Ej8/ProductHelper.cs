@@ -63,5 +63,10 @@ namespace Dsw2026Ej8
         {
             return sale.CalculateTotal();
         }
+
+        public static string NormalizarCodigoProducto(string code)
+        {
+            return code.ToProductCode();
+        }
     }
 }
