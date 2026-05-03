@@ -1,4 +1,6 @@
-﻿namespace Dsw2026Ej8
+﻿using static Dsw2026Ej8.Sale;
+
+namespace Dsw2026Ej8
 {
     internal class Program
     {
@@ -17,6 +19,15 @@
             //4
             double promedio = ProductHelper.CalcularPromedio(8, null, 7);
             Console.WriteLine(promedio);
+            //5
+            Sale minorista = new RetailSale {Amount = 1000};
+            decimal totalRetail = ProductHelper.ObtenerImporteFinal(minorista);
+            Console.WriteLine($"total minorista: {totalRetail}");
+            Sale mayorista = new WholesaleSale {Amount = 1000};
+            decimal totalWholesale = ProductHelper.ObtenerImporteFinal(mayorista);
+            Console.WriteLine($"total mayorista: {totalWholesale}");
+
+
         }
     }
 }

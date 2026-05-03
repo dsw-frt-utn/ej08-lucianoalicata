@@ -58,5 +58,10 @@ namespace Dsw2026Ej8
 
             return suma / notasValidas;
         }
+
+        public static decimal ObtenerImporteFinal(Sale sale)
+        {
+            return sale.CalculateTotal();
+        }
     }
 }
