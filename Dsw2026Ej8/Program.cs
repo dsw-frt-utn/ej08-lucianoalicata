@@ -27,7 +27,13 @@ namespace Dsw2026Ej8
             Sale mayorista = new WholesaleSale { Amount = 1000 };
             decimal totalWholesale = Problema5.ObtenerImporteFinal(mayorista);
             Console.WriteLine($"total mayorista: {totalWholesale}");
-
+            //6
+            string sinFormato = "  ab 123 x  ";
+            string conFormato = Problema6.NormalizarCodigoProducto(sinFormato);
+            Console.WriteLine($"sin formato: {sinFormato}");
+            Console.WriteLine($"con formato: {conFormato}");
+            string codigoNulo = null;
+            Console.WriteLine($"nulo: {Problema6.NormalizarCodigoProducto(codigoNulo)}");
         }
     }
 }
