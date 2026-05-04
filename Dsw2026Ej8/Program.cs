@@ -15,6 +15,9 @@ namespace Dsw2026Ej8
             Product p = new Product("Original");
             string comparacion = Problema3.CompararCopias(12, p);
             Console.WriteLine(comparacion);
+            //4
+            double promedio = Problema4.CalcularPromedio(8, null, 7);
+            Console.WriteLine(promedio);
         }
     }
 }
