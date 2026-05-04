@@ -11,7 +11,10 @@ namespace Dsw2026Ej8
             //2
             string resumen = Problema2.CrearResumenVenta(97612, "pantalón", 3, 15000);
             Console.WriteLine(resumen);
-
+            //3
+            Product p = new Product("Original");
+            string comparacion = Problema3.CompararCopias(12, p);
+            Console.WriteLine(comparacion);
         }
     }
 }
